@@ -88,11 +88,26 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 4s;
 }
+
+.ex-9-img:hover{
+    filter: sepia(1) grayscale(1);
+    border-radius: 30px;
+    width: 550px;
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 1s linear infinite;
 }
-.ex-11-icon {
+
+@keyframes spin {
+    0% {
+        transform: rotate(2turn);
+    }
+
+.ex-11-icon{
     font-size: 60px;
 }
 .ex-12-button, .ex-13-button {
